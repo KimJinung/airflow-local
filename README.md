@@ -10,7 +10,7 @@ docker compose build
 docker compose up airflow-init
 ```
 
-## 3. Running Airflow
+## 3. Start Airflow
 ```bash
 docker compose up -d
 ```
