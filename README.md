@@ -1,10 +1,10 @@
 # airflow-local
 This is a quck-start project for easily customizing Airflow
 
-- Use 2 Workers with Celery executor. if you have insufficient memory, comment out `airflow-worker-2` in the `docker-compose.yaml` file.
+- How to add Python packgaes? Simply include package name in the `requirements.txt` file.
+- By default, Use 2 Workers with Celery executor. if you have insufficient memory, comment out `airflow-worker-2` in the `docker-compose.yaml` file.
 - Basically, updates the DAG directory every 30 seconds.
 - Default Timezone is Asia/Seoul.
-- How to add Python packgaes? Simply include package name in the `requirements.txt` file.
 
 ---
 
@@ -26,6 +26,8 @@ docker compose up airflow-init
 ```bash
 docker compose up -d
 ```
+- Airflow Web Server: http://localhost:8080
+- Flower(Worker monitoring tool): http://localhost:5555
 
 ## Cleaning up
 ```bash
